@@ -6,9 +6,10 @@ function Scooters () {
   const [scooters, setScooters] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch("/scooter.json")
+    fetch("scooters.json")
       .then((response) => response.json())
-      .then((data) => setScooters(data));
+      .then((data) => setScooters(data)
+      );
   }, []);
 
   return (
