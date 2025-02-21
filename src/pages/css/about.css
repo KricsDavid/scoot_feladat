@@ -1,0 +1,123 @@
+
+
+#about section{
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#about section h2{
+    font-family: monospace;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#about section p{
+    padding: 20px;
+    color: gray;
+    max-width: 400px;
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    #about section{
+        grid-template-columns: 1fr;
+    }
+
+    #about section:nth-child(3) > div:nth-child(1){
+        order: 1;
+    }
+  }
+
+#about section>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about .about-image{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-size: cover;
+    max-width: 300px;
+    margin: auto;
+}
+
+#about .values-section{
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#about .values-section h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#about .values-section>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    #about .values-section>div{
+        grid-template-columns: 1fr;
+    }
+  }
+
+#about .value-image{
+    max-width: 200px;
+    aspect-ratio: 1;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#about .value-image .value-number{
+    --number-size: 70px;
+    width: var(--number-size);
+    aspect-ratio: 1;
+    background-color: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    bottom: calc(-1 * var(--number-size));
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+
+#about .value-card h3{
+    font-family: monospace;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#about .value-card p {
+    text-align: center;
+}
+
+
+#about .value-card>div:last-child{
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: auto;
+}
+
+#about .value-card>div:last-child p{
+    padding: 0px;
+}

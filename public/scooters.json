@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "scooter_name": "Xiaomi Electric Scooter 4 Lite",
+        "description": "Utazz stílusosan!",
+        "power_in_w": 300,
+        "max_range": 20,
+        "max_speed_kmh": 25,
+        "scooter_type": 1
+    },
+    {
+        "id": 2,
+        "scooter_name": "Segway Ninebot MAX",
+        "description": "Erőteljes és tartós, ideális hosszú utakra.",
+        "power_in_w": 350,
+        "max_range": 65,
+        "max_speed_kmh": 30,
+        "scooter_type": 2
+    },
+    {
+        "id": 3,
+        "scooter_name": "Razor E100",
+        "description": "Könnyű és gyors, tökéletes a fiatalok számára.",
+        "power_in_w": 100,
+        "max_range": 16,
+        "max_speed_kmh": 16,
+        "scooter_type": 3
+    },
+    {
+        "id": 4,
+        "scooter_name": "Boosted Rev",
+        "description": "Nagy teljesítményű, minden terepre alkalmas.",
+        "power_in_w": 1500,
+        "max_range": 35,
+        "max_speed_kmh": 39,
+        "scooter_type": 1
+    },
+    {
+        "id": 5,
+        "scooter_name": "Unagi Model One",
+        "description": "Prémium dizájn és teljesítmény minden használathoz.",
+        "power_in_w": 500,
+        "max_range": 25,
+        "max_speed_kmh": 32,
+        "scooter_type": 1
+    },
+    {
+        "id": 6,
+        "scooter_name": "Ninebot S",
+        "description": "Kompakt, könnyű és szórakoztató.",
+        "power_in_w": 700,
+        "max_range": 22,
+        "max_speed_kmh": 15,
+        "scooter_type": 2
+    },
+    {
+        "id": 7,
+        "scooter_name": "E-Twow Booster Plus",
+        "description": "Könnyű és erőteljes, ideális városi közlekedéshez.",
+        "power_in_w": 500,
+        "max_range": 35,
+        "max_speed_kmh": 30,
+        "scooter_type": 2
+    },
+    {
+        "id": 8,
+        "scooter_name": "Dualtron Thunder",
+        "description": "A legjobb választás a nagy sebességre és hosszú távokra.",
+        "power_in_w": 2700,
+        "max_range": 80,
+        "max_speed_kmh": 80,
+        "scooter_type": 1
+    },
+    {
+        "id": 9,
+        "scooter_name": "Apollo City 2025",
+        "description": "Tökéletes városi közlekedéshez, nagy hatótávolsággal.",
+        "power_in_w": 600,
+        "max_range": 45,
+        "max_speed_kmh": 40,
+        "scooter_type": 1
+    }
+]

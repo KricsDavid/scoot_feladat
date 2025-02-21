@@ -1,0 +1,129 @@
+:root{
+  font-family: 'Roboto', sans-serif;
+
+  --primary:#feb72a;
+  --secondary: #353e50;
+  background-color: #FAFAFA;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: monospace;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+
+footer ul a{
+  color: lightgray;
+  text-decoration: none;
+}
+
+footer .left-side, footer .right-side{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+.title{
+  background-size: cover;
+
+  width: 100%;
+  
+  display: block;
+  background-size: cover;
+  background-position: center;
+
+  height: 7rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.title::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title h1{
+  color: white;
+  font-family: monospace;
+  width: 100%;
+  padding-left: 10px;;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 99;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.scooter_card{
+  background-color: var(--secondary);
+  color: white;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.scooter_card h3{
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.scooter_card h4{
+  color: var(--primary);
+  font-size: 1rem;
+  margin: 10px 0px;
+}
+
+#scooters_img{
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  filter: brightness(0.8);
+}
+
+#available-scooters{
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  #available-scooters{
+    grid-template-columns: 1fr;
+  }
+}
+
+footer>div{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}

@@ -1,0 +1,40 @@
+@media (min-width: 800px) {
+  .scooter-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 799px) {
+  .scooter-card-container {
+    display: block;
+  }
+}
+
+footer {
+  background-color: #353e50;
+}
+
+footer .logo {
+  color: white;
+  font-family: "Monospace", sans-serif;
+  font-size: 1.5em;
+}
+
+footer .right-side {
+  display: flex;
+  gap: 10px;
+}
+
+footer .right-side img {
+  width: 20px;
+}
+
+
+.about .our-values .value-item {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}

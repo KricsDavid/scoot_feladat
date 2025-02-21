@@ -1,0 +1,114 @@
+nav>div{
+    height: 60px;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav .hamburger{
+    height: 40px;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+nav .hamburger>div{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 7.5px;
+    height: 6px;
+    background-color: var(--primary);
+    position: relative;
+}
+
+nav .hamburger>div::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    height: 6px;
+    background-color: var(--primary);
+}
+
+nav .hamburger>div::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    height: 6px;
+    background-color: var(--primary);
+}
+
+
+nav .hamburger.open>div{
+    top: 17.5px;
+    rotate: 0deg;
+    height: 0;
+}
+
+nav .hamburger.open>div::before{
+    /* display: none; */
+    rotate: 45deg;
+    top: 0px;
+}
+
+nav .hamburger.open>div::after{
+    transform-origin: center;
+    rotate: -45deg;
+    top: 0px;
+}
+
+nav .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+nav ul{
+    background-color: white;
+    height: 0px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 45px;
+    z-index: 99;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    transition: height 0.5s;
+    list-style-type: none;
+}
+
+nav ul>li{
+    color: white;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    color: gray;
+    padding: 20px 40px;
+}
+
+nav ul>li>a{
+    text-decoration: none;
+    color: black
+}
+
+nav ul>li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav ul.open>li{
+    color: black;
+}
+
+nav ul.open{
+    height: calc(100vh - 60px);
+}
